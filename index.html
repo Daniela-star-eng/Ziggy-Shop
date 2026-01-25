@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ziggy Pet Shop</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <span>📍 Find a Store</span>
+  <span>🚚 Order Tracking</span>
+  <span class="promo">15% OFF when you buy online & pick up in-store</span>
+</div>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">🐾 Ziggy</div>
+
+  <button class="nav-toggle" aria-label="Open navigation" onclick="toggleNav(this)">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="blog.html">Blog</a>
+    <a href="#">Contact Us</a>
+  </nav>
+
+  <div class="actions">
+    <input type="text" placeholder="Search products...">
+    <span>🛒 $0.00</span>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <span class="badge">FAST & FREE SHIPPING</span>
+    <h1>Todo para <br><span>Tu Mascota</span></h1>
+    <p>Lo mejor para tu mejor amigo</p>
+    <nav>
+    <button onclick="location.href='shop.html'">Comprar Ahora →</button>
+    </nav>
+  </div>
+
+  <div class="hero-img">
+    <img src="images/cute-pets-together-in-a-joyful-gathering-at-home-png.png" alt="Dog">
+    <div class="circle"></div>
+  </div>
+</section>
+
+<!-- BEST SELLING -->
+<section class="best-selling">
+  <h2>Best Selling Products</h2>
+
+  <div class="products">
+    <div class="product-card">
+      <img src="images/Barkaritaville Archives.jpg">
+      <h4>Aerodynamic Watch</h4>
+      <span>$179.50</span>
+    </div>
+
+    <div class="product-card">
+      <img src="images/Dog Leash Pony Makarony _ Pets Accessories Products.jpg">
+      <h4>Plastic Clock</h4>
+      <span>$305.49</span>
+    </div>
+
+    <div class="product-card">
+      <img src="images/The Foggy Dog - Your Best Friend Deserves the Best.jpg">
+      <h4>Marble Shoes</h4>
+      <span>$66.17</span>
+    </div>
+
+    <div class="product-card">
+      <img src="images/NEW ARRIVALS.jpg">
+      <h4>Rustic Car</h4>
+      <span>$89.41</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROMO GRID -->
+<section class="promo-grid">
+  <div class="promo-card blue">
+    <h3>50% OFF</h3>
+    <p>Pet Food & Accessories</p>
+  </div>
+
+  <div class="promo-card green">
+    <h3>30% Sale Off</h3>
+    <p>Free Shipping</p>
+  </div>
+
+  <div class="promo-card yellow">
+    <h3>Parrot Food</h3>
+    <p>Healthy Formula</p>
+  </div>
+
+  <div class="promo-card orange">
+    <h3>Dog Supplies</h3>
+    <p>25% Off</p>
+  </div>
+
+  <div class="promo-card purple">
+    <h3>Premium Cat Food</h3>
+    <p>Save 30%</p>
+  </div>
+</section>
+
+<!-- COLLECTION -->
+<section class="collection">
+  <h2>Spring Pet Collection</h2>
+
+  <div class="products">
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e">
+      <h4>Pet Food</h4>
+      <span>$36.84</span>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1583512603873-7d3c02d99c7f">
+      <h4>Dog Treats</h4>
+      <span>$31.01</span>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1601758123927-196c00c4a8c8">
+      <h4>Dry Food</h4>
+      <span>$94.23</span>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1583511655826-05700d52f4d9">
+      <h4>Calming Bites</h4>
+      <span>$305.49</span>
+    </div>
+  </div>
+</section>
+
+<script>
+  function toggleNav(btn) {
+    const nav = document.querySelector('.navbar');
+    btn.classList.toggle('open');
+    nav.classList.toggle('open');
+  }
+</script>
+</body>
+</html>
